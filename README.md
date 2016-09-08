@@ -1,11 +1,11 @@
 Drupal Docker Documentation
 ==================
 
-Drupal Docker Initiative was created to help understand and adapt Docker to projects based on CMS Drupal.
+Drupal Docker Initiative (DDI) was created to help understand and adapt Docker to projects based on CMS Drupal.
 
 # Contribute
 
-If you'd like to help grow Drupal Docker Initiative by contributing to docs, please fork this repo and open Pull Request. 
+If you'd like to help grow Drupal Docker Initiative by contributing to docs, please fork this repo and open a Pull Request. 
 Our documentation team will review it and merge to master.
 
 # Hosting
