@@ -1,0 +1,19 @@
+{
+    "name": "Drupal Docker Documentation",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/drupal-docker/docs"
+    },
+    "plugins": [
+        "edit-link", "ga", "ungrey", "toggle-chapters"
+    ],
+    "pluginsConfig": {
+        "ga": {
+            "token": ""
+        },
+        "edit-link": {
+           "base": "https://github.com/drupal-docker/docs/edit/master",
+           "label": "Edit This Page"
+       }
+    }
+}
