@@ -1,0 +1,14 @@
+sudo: required
+
+services:
+  - docker
+
+before_script:
+  - docker version
+
+script:
+  - docker build -t docs .
+  - docker run -d docs
+
+after_script:
+  - docker images
