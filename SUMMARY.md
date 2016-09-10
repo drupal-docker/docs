@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Prerequisites](PREREQUISITES.md)
+* [Structure](STRUCTURE.md)
 * [Images](images/README.md)
   * [PHP](images/PHP.md)
   * [MySQL](images/MYSQL.md)
