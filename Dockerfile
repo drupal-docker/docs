@@ -8,7 +8,7 @@ COPY ./ /var/www/html
 RUN npm install http-server gitbook-cli -g \
  && gitbook install \
  && gitbook build \
- && cd _book \
+ && cd _book
 
 EXPOSE 80
 
