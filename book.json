@@ -9,7 +9,7 @@
     ],
     "pluginsConfig": {
         "ga": {
-            "token": ""
+            "token": "UA-74100536-1"
         },
         "edit-link": {
            "base": "https://github.com/drupal-docker/docs/edit/master",
