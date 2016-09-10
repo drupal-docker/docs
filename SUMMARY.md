@@ -13,4 +13,5 @@
   * [Apache](images/APACHE.md)
   * [Drush](images/DRUSH.md)
   * [Drupal Console](images/CONSOLE.md)
+* [Performance](PERFORMANCE.md)
 * [Orchestration](compose/README.md)
