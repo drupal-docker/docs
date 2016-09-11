@@ -1,0 +1,5 @@
+.markdown-section a.glossary-term {
+    text-decoration: none;
+    border-bottom: 1px #9898c7 dotted;
+    color: #434354;
+}
