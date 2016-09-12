@@ -1,7 +1,7 @@
 # Prerequisites
 
 In order to Dockerize your environment you must install:
-* Docker Engine
+* [Docker Engine](https://docs.docker.com/engine/installation/)
 * (optional) [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## OS
