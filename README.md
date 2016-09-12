@@ -19,3 +19,11 @@ You can find our documentation pages on [GitHub](https://github.com/drupal-docke
 ## Authors
 - Documentation team
 - [Community](https://github.com/drupal-docker/docs/graphs/contributors)
+
+## License
+
+Documentation is released under CC-BY-SA-4.0 license. You are free to:
+- Share — copy and redistribute the material in any medium or format
+- Adapt — remix, transform, and build upon the material
+
+for any purpose, even commercially.
