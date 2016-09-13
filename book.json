@@ -14,9 +14,9 @@
         "edit-link": {
            "base": "https://github.com/drupal-docker/docs/edit/master",
            "label": "Edit This Page"
-       }
+        }
     },
     "styles": {
-        "website": "assets/css/book.css"
+        "website": "gitbook/assets/css/book.css"
     }
 }
