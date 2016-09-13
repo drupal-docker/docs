@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [Policy](POLICY.md)
 * [Prerequisites](PREREQUISITES.md)
 * [Structure](STRUCTURE.md)
 * [Images](images/README.md)
@@ -15,3 +16,4 @@
   * [Drupal Console](images/CONSOLE.md)
 * [Performance](PERFORMANCE.md)
 * [Orchestration](compose/README.md)
+* [Deprecation](DEPRECATION.md)
