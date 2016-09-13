@@ -1,6 +1,8 @@
 Drupal Docker Initiative
 ==================
 
+![DDI Logo][logo]
+
 Drupal Docker Initiative (DDI) was created to help understand and adapt Docker to projects based on Drupal.
 
 Use one of our Drupal-tailored images to build lightweight, shippable environment for your app. Use it on all stages of project life cycle - your local machine, test, staging or production environment.
@@ -27,3 +29,6 @@ Documentation is released under CC-BY-SA-4.0 license. You are free to:
 - Adapt — remix, transform, and build upon the material
 
 for any purpose, even commercially.
+
+[logo]: gitbook/images/logo-alpha4.png "DDI Logo"
+
