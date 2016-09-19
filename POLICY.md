@@ -1,5 +1,10 @@
 # DDI Policy
 
+## License
+
+- All image definitions are distributed under MIT License.
+- All documentation pages and assets are distributed under CC-BY-SA-4.0
+
 ## Version
 
 [in progress](https://github.com/drupal-docker/php/issues/54)
