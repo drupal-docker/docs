@@ -6,8 +6,8 @@
 
 ## Links
 
-[Docker Hub](https://hub.docker.com/r/drupaldocker/nginx)
-[GitHub](https://github.com/drupal-docker/nginx)
+[Docker Hub](https://hub.docker.com/r/drupaldocker/php)
+[GitHub](https://github.com/drupal-docker/php)
 
 ## Quickstart:
 
