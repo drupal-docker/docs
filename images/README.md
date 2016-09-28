@@ -12,6 +12,10 @@ All images are hosted on [Docker Hub](https://hub.docker.com/r/drupaldocker/) so
 $ docker pull drupaldocker/php:7
 ```
 
+## Schema
+
+![DDI Images][chart]
+
 ## Name
 
 Image name consists of three parts:
@@ -32,3 +36,5 @@ All images are created based on `Dockerfiles`. Dockerfile is a script, composed 
 ### Why Dockerfile is better than `docker push`
 
 TBA
+
+[chart]: gitbook/images/images_chart.svg "DDI Images"
