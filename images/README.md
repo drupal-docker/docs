@@ -12,6 +12,10 @@ All images are hosted on [Docker Hub](https://hub.docker.com/r/drupaldocker/) so
 $ docker pull drupaldocker/php:7
 ```
 
+## Diagram
+
+![DDI Images](images_chart.svg)
+
 ## Name
 
 Image name consists of three parts:
