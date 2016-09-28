@@ -37,4 +37,4 @@ All images are created based on `Dockerfiles`. Dockerfile is a script, composed 
 
 TBA
 
-[chart]: gitbook/images/images_chart.svg "DDI Images"
+[chart]: images_chart.svg "DDI Images"
