@@ -17,4 +17,5 @@ docker run -dP --volumes-from <php> --link <php> drupaldocker/apache
 
 ## Environmental variables
 
-TBA
+- `DOCROOT`: `/var/www/html` (default)
+- `SERVER_NAME`: `_` (default)
