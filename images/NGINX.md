@@ -17,4 +17,5 @@ docker run -d -p 80:80 --volumes-from <php-or-data-container> --link <php-fpm-co
 
 ## Environmental variables
 
-TBA
+- `DOCROOT`: `/var/www/html` (default)
+- `SERVER_NAME`: `_` (default)
