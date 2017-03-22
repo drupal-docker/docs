@@ -17,7 +17,7 @@ docker run -dP drupaldocker/php:5.6-apache
 ```
 
 - Check [GitHub repository](https://github.com/drupal-docker/php) to find all available tags.
-- If you need dev tools, like xdebug etc. use [php-dev image](#php--dev-)
+- If you need dev tools, like xdebug etc. use [php-dev images](#php-dev)
 
 ## Environmental variables
 
