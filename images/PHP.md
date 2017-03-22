@@ -13,9 +13,30 @@
 
 PHP 5.6 + Apache
 ```bash
-docker run -dP drupaldocker/php:apache
+docker run -dP drupaldocker/php:5.6-apache
+```
+
+- Check [GitHub repository](https://github.com/drupal-docker/php) to find all available tags.
+- If you need dev tools, like xdebug etc. use [php-dev image](#php--dev-)
+
+## Environmental variables
+
+n/a
+
+# PHP (dev)
+
+## Links
+
+[Docker Hub](https://hub.docker.com/r/drupaldocker/php-dev)
+[GitHub](https://github.com/drupal-docker/php-dev)
+
+## Quickstart:
+
+PHP 5.6 + Apache
+```bash
+docker run -dP drupaldocker/php-dev:5.6-apache
 ```
 
 ## Environmental variables
 
-TBA
+n/a
