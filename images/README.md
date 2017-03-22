@@ -9,7 +9,7 @@ DDI owns and maintains several images, including:
 All images are hosted on [Docker Hub](https://hub.docker.com/r/drupaldocker/) so you can simply pull them using Docker client in you OS, for instance:
 
 ```
-$ docker pull drupaldocker/php:7
+$ docker pull drupaldocker/php:7.0
 ```
 
 ## Diagram
