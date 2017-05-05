@@ -21,4 +21,4 @@
   * [2. data-containers](compose/02-data-containers.md)
   * [3. drush](compose/03-drush.md)
   * [4. networks](compose/04-networks.md)
-* [Deprecation](DEPRECATION.md)
+* [Changelog](CHANGELOG.md)
