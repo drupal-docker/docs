@@ -1,6 +1,9 @@
-# Deprecation announcements
+# CHANGELOG
 
-Below you can find complete list of deprecation announcements, sorted by date.
+Below you can find complete list of changes to images, sorted by date.
+
+## 05-05-2017
+- On **June 5, 2017** PHP version for Drush 8 and master will be bumped from 5.6 to 7.0
 
 ## 22-03-2017
 - Most image tags for php images are now deprecated. It is recommended to use minor version tag of your need, i.e. 5.6-fpm or 7.1-fpm, etc.
