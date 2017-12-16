@@ -23,7 +23,7 @@ Image name consists of three parts:
 - image
 - tag
 
-All images created by DDI has common `vendor` - drupaldocker. `Image` is a name of service (php, mysql) or tool (drush, console). `Tag` is usualy a version constraint inside image. Each image has default tag `latest`.
+All images created by DDI have a common `vendor` - drupaldocker. `Image` is a name of service (php, mysql) or tool (drush, console). `Tag` is usualy a version constraint inside image. Each image has default tag `latest`.
 
 ## Version
 
