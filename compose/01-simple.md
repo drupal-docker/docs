@@ -8,15 +8,15 @@ docker-compose up -d
 
 ## docker-compose.yml
 ```
-version: '2'
+version: '3.5'
 
 services:
   db:
-    image: drupaldocker/mariadb
+    image: drupaldocker/mariadb:10.3
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'True'
   app:
-    image: drupaldocker/php:apache
+    image: drupaldocker/php:7.0-apache-1.x
     links:
       - db
     ports:
