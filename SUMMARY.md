@@ -18,7 +18,7 @@
 * [Performance](PERFORMANCE.md)
 * [Orchestration (docker-compose)](compose/README.md)
   * [1. simple](compose/01-simple.md)
-  * [2. data-containers](compose/02-data-containers.md)
+  * [2. volumes](compose/02-volumes.md)
   * [3. drush](compose/03-drush.md)
   * [4. networks](compose/04-networks.md)
 * [Changelog](CHANGELOG.md)
