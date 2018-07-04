@@ -2,13 +2,12 @@ Networks
 =================
 
 Ok, you have multi-container app now, and you know how to link containers together.
-But we should remember container has to be up&running to link it to another
-container. What if your db container crash? You would have to rebuild php as
-well.
+But we should remember container has to be up&running to link them one to another. 
+What if your db container crash? Unfortunately, you would have to rebuild php as well.
 
 ## Networks for the rescue!
 
-Docker introduce networking tool which soon will take over linking functionality.
+Docker introduce networking tool which took over linking functionality.
 You can create networks and add containers to those networks so they can connect
 each other. Let's build simple app with two networks:
 
@@ -21,10 +20,8 @@ the outside world.
 
 You can build your application as always:
 ```
-docker-compose up -d db php app
+docker-compose up -d
 ```
-
-One change - we run only containers we need, skipping drush.
 
 You can still run drush on demand:
 ```
@@ -33,38 +30,44 @@ docker-compose run --rm drush bash
 
 ## docker-compose.yml
 ```yaml
-version: '2'
+version: '3.5'
 
 services:
   db:
-    image: drupaldocker/mariadb
+    image: drupaldocker/mariadb:10.3
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'True'
+    volumes:
+      - db_volume:/var/lib/mysql
     networks:
       - back-tier
   php:
-    image: drupaldocker/php
+    image: drupaldocker/php:7.0-fpm-2.x
+    volumes:
+      - file_volume:/var/www/html
     networks:
       - back-tier
       - front-tier
-  app:
-    image: drupaldocker/nginx
-    networks:
-      - front-tier
+  web:
+    image: drupaldocker/nginx:1.13-2.x
     ports:
       - 80
-    volumes_from:
-      - php
+    volumes:
+      - file_volume:/var/www/html
+    networks:
+      - front-tier
   drush:
-    image: drupaldocker/drush
+    image: drupaldocker/drush:8
     networks:
       - back-tier
-    volumes_from:
-      - php
+    volumes:
+      - file_volume:/var/www/html
+
+volumes:
+  db_volume:
+  file_volume:
 
 networks:
   front-tier:
-    driver: bridge
   back-tier:
-    driver: bridge
-```
+  ```
