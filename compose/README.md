@@ -19,6 +19,6 @@ Examples are written using compose version 2. Version 2 files are supported by C
 In this chapter you'll find a few examples how to start orchestrate your multi-container app with docker-compose.
 
 1. Simple - MariaDB + php:apache
-1. Data containers - Data Volume Containers
+1. Volumes - Data persistency
 1. Drush - run drush container on demand
 1. Networks - link containers with networks
