@@ -4,9 +4,15 @@ Below you can find complete list of changes to images, sorted by date.
 
 ## 04-07-2018
 
-Changes to `php` image:
-- branch 2.x became default branch
-- latest branch has been removed to encourage people do pull version specific branch
+General changes to `php` image:
+- branch `2.x` became the default branch
+- latest branch has been removed to encourage people do pull explicit php version
+- branch `master` became `1.x`
+- branch `1.x` is no longer supported
+
+Changes to `php:2.x`:
+- VOLUME instruction has been removed. Developers must explicitly decide upon defining volume on container runtime
+- All images are now alpine-based
 
 ## 15-06-2017
 - Drush 8 and Drush 9 (master) are now based on [PHP7 cli image](https://github.com/drupal-docker/php/blob/master/7.0/Dockerfile-cli)
