@@ -20,7 +20,7 @@ Now you have access to drush interactive shell. Type `st` to see status of your
 Drupal site. Press `Alt + D` to quit.
 
 You can run as many Drush containers as you want. If you quit it will be
-automatically destroyed. If you'd like to preserve your Drush container just
+automatically destroyed. If you'd like to preserve your Drush container after it quits just
 remove `--rm` flag from command.
 
 If you'd rather prefer to use Bash (with additional access to Drush command):
@@ -33,38 +33,43 @@ $ docker-compose --rm run drush bash
 You can quit at any time (just type `exit`).
 
 ***Be aware that /var/www/html volume you share across all app containers (php,
-nginx, apache, drush) so all changes that have been made to that directory will
+nginx, drush) so all changes that have been made to that directory will
 affect other containers as well.***
 
 ## docker-compose.yml
 ```yaml
-version: '2'
+version: '3.5'
 
 services:
-  datadb:
-    image: drupaldocker/mariadb
-    entrypoint: /bin/true
   db:
-    image: drupaldocker/mariadb
+    image: drupaldocker/mariadb:10.3
     environment:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'True'
-    volumes_from:
-      - datadb
-  dataapp:
-    image: drupaldocker/php:apache
-    entrypoint: /bin/true
-  app:
-    image: drupaldocker/php:apache
+    volumes:
+      - db_volume:/var/lib/mysql
+  php:
+    image: drupaldocker/php:7.0-fpm-2.x
     links:
       - db
+    volumes:
+      - file_volume:/var/www/html
+  nginx:
+    image: drupaldocker/nginx:1.13-2.x
+    links:
+      - php
     ports:
       - 80
-    volumes_from:
-      - dataapp
+    volumes:
+      - file_volume:/var/www/html
   drush:
-    image: drupaldocker/drush
+    image: drupaldocker/drush:8
     links:
       - db
-    volumes_from:
-      - dataapp
+    volumes:
+      - file_volume:/var/www/html
+
+volumes:
+  db_volume:
+  file_volume:
+
 ```
